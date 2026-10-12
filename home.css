@@ -1,0 +1,403 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f8;
+    color: #4a2c35;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d6336c;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a2c35;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d6336c;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #fff0f5, #ffe0eb);
+    background-image: url(pic2.png);
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 550px;
+    animation: slideIn 1s ease;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #d6336c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a61e4d;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-image: url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=700&q=80");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 15px 40px rgba(198, 24, 91, 0.25);
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* ================= FEATURES ================= */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 70px 8%;
+    background: white;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: #fff5f8;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.15);
+}
+
+.feature-card h3 {
+    color: #c2185b;
+    margin: 15px 0 10px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 80px 8%;
+    text-align: center;
+    background: #ffeaf1;
+}
+
+.about h2 {
+    font-size: 38px;
+    color: #c2185b;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    color: #c2185b;
+    margin-bottom: 40px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products {
+    padding: 80px 8%;
+    background: white;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff5f8;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(214, 51, 108, 0.18);
+}
+
+/* Product Images */
+
+.product-image {
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Lipstick */
+.product-card:nth-child(1) .product-image {
+    background-image: url("https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80");
+}
+
+/* Foundation */
+.product-card:nth-child(2) .product-image {
+    background-image: url("https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=600&q=80");
+}
+
+/* Real Blush */
+.product-card:nth-child(3) .product-image {
+    background-image: url("https://images.unsplash.com/photo-1619451334792-150fd785ee74?auto=format&fit=crop&w=600&q=80");
+}
+
+/* Highlighter */
+.product-card:nth-child(4) .product-image {
+    background-image: url("https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?auto=format&fit=crop&w=600&q=80");
+}
+
+.product-info {
+    padding: 22px;
+    text-align: center;
+}
+
+.product-info h3 {
+    color: #c2185b;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.price {
+    display: block;
+    color: #d6336c;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-btn {
+    border: none;
+    background: #d6336c;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.product-btn:hover {
+    background: #a61e4d;
+}
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 80px 8%;
+    background: #ffeaf1;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+    background:palevioletred;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #f3b6c9;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: black;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-form button {
+    border: none;
+    padding: 14px;
+    background: #d6336c;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #a61e4d;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    text-align: center;
+    padding: 25px;
+    background: #4a2c35;
+    color: white;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
+```
+
+**Important:** tumhare HTML mein product cards ka order same rehna chahiye: **Lipstick → Foundation → Blush → Highlighter**, kyunki CSS `nth-child()` se images assign kar rahi hai.
