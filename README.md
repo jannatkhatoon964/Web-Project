@@ -21,11 +21,11 @@ Glow Beauty is a front-end beauty product showcase website developed using **HTM
 - 💌 **Contact Form** — Enter your name, email, and message to see a confirmation alert.
 - 💖 **About Section** — Learn about the Glow Beauty brand.
 
-## 💋 Our Beauty Collection
+##  Our Beauty Collection
 
 | 💄 Product | 💰 Price |
 |---|---:|
-| 💋 Velvet Lipstick | $18.00 |
+|  Velvet Lipstick | $18.00 |
 | ✨ Glow Foundation | $29.00 |
 | 🌸 Rose Blush | $20.00 |
 | 💎 Diamond Highlighter | $24.00 |
